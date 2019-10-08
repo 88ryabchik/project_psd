@@ -24,6 +24,7 @@ a {
 
 h1, h2, h3 {
     text-transform: uppercase;
+    font-weight: lighter;
 }
 
 .gray-text {
@@ -140,6 +141,8 @@ border: 1px solid #ababab;
 
     #banners .bn-right .img-block {
         position: relative;
+        height: 180px;
+        overflow: hidden;
     }
 
     #banners .bn-right h3 {
@@ -170,3 +173,47 @@ border: 1px solid #ababab;
         align-items: center;
         margin: 10px 0;
     }
+
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0 0 0 0;
+        border-top: 1px solid grey;
+        padding: 30px 0 0 0;
+    }
+
+    #content .item {
+        width: 33.33%;
+        
+    }
+
+    #content .item h2 {
+        margin: 0 0 30px 0;
+    }
+
+    #content .about, #content .contact {
+        padding: 0 40px;
+    }
+
+    #content .about {
+        border-right: 1px solid grey;
+        border-left: 1px solid grey;
+        
+    }
+
+.news .block-news {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.news {
+    padding-right: 10px;
+}
+
+.news .block-news h4 {
+    margin: 0 0 5px 0;
+}
