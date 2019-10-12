@@ -62,7 +62,7 @@ header, #header-top {
 
 
 
-#logo::before, #logo::after {
+#logo::before, #logo::after, #logo::before, #logo::after, #logo-footer::before, #logo-footer::after {
     content: "";
     height: 55px;
     width: 55px;
@@ -71,14 +71,14 @@ header, #header-top {
     top: 0;
 }
 
-#logo::before {
+#logo::before,  #logo-footer::before{
     background: #f8d277;
     position: absolute;
-    top: 0;
+
     left: 0;
 }
 
-#logo {
+#logo, #logo-footer {
     position: relative;
     width: 245px;
     display: flex;
@@ -89,7 +89,7 @@ header, #header-top {
     border-right: 1px solid #cac8c5;
 }
 
-#logo::after {
+#logo::after, #logo-footer::after {
     background: #f2ac04;
     position: absolute;
     left: 15px;
@@ -261,4 +261,44 @@ border: 1px solid #ababab;
  .contact > div:first-of-type span, .contact > div:first-of-type + div span {
      font-weight: bold;
 
+ }
+
+ footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-top: 1px solid grey;
+padding: 25px 0 15px 0;
+margin-top: 25px;
+ }
+
+ footer ul {
+     display: flex; 
+     flex-wrap: wrap;
+     margin: 25px 0 5px 0;
+ }
+
+ footer ul li a {
+     color: grey;
+     padding: 0 10px;
+     border-right: 1px solid grey;
+     display: block;
+     text-transform: uppercase;
+     font-size: 12px;
+ }
+
+ footer ul li:last-child a {
+     border: none;
+ }
+
+ #logo-footer {
+     height: 60px;
+     border: none;
+     padding: 0;
+     width: 190px;
+ }
+
+ footer span {
+     color: grey;
  }
