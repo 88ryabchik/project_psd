@@ -217,3 +217,48 @@ border: 1px solid #ababab;
 .news .block-news h4 {
     margin: 0 0 5px 0;
 }
+
+.news .date-news span{
+    color: #f2ac04;
+    font-weight: bold;
+    width: 100%;
+    font-size: 22px;
+ }
+ 
+ .news .date-news{
+    border-right: 1px solid grey;
+    padding-right:10px;
+    text-align: center;
+    margin-right: 10px;
+ }
+ 
+ .about{
+    line-height: 24px;
+ }
+ 
+ .contact > div{
+    border-bottom: 1px dashed grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .contact > div:last-child{
+    border: none;
+ }
+ .contact i {
+    font-size: 26px;
+    width: 35px;
+    text-align: center;
+    color: lightgrey;
+ }
+
+ .contact span {
+     width: 70%;
+     color: grey;
+ }
+
+ .contact > div:first-of-type span, .contact > div:first-of-type + div span {
+     font-weight: bold;
+
+ }
