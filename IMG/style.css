@@ -103,6 +103,7 @@ header, #header-top {
 
 #header-menu ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #header-menu ul li a {
@@ -301,4 +302,113 @@ margin-top: 25px;
 
  footer span {
      color: grey;
+ }
+
+ @media(max-width: 1030) {
+    body {
+    padding: 15px;
+}
+ }
+
+ @media(max-width: 725px) {
+     body {
+         padding: 15px;
+    }
+    
+    #logo {
+         border: none;
+     }
+
+     #header-text {
+         margin-top: 15px;
+         padding: 0;
+     }
+
+     #header-top {
+         padding: 0 0 15px 0;
+         justify-content: center;
+         text-align: center;
+     }
+
+     #header-text h4 {
+         margin-bottom: 15px;
+     }
+     #header-menu ul {
+         justify-content: center;
+     }
+
+     #title-products {
+         text-align: center;
+         margin: 5px 0;
+     }
+
+     #banners {
+        flex-direction: column;
+        text-align: center;
+     }
+
+     #baners .wrap {
+         margin: 5px 0 !important;
+     }
+
+     #banners .bn-right .img-block {
+         height: auto;
+     }
+     
+     #banners > div {
+         width: 90%;
+     }
+
+     #banners .bn-right h3 {
+         width: 90%;
+         font-size: 4vw;
+     }
+
+     #header-menu ul li a {
+        padding: 5px 35px;
+    }
+
+    #content {
+        margin-top: 5px;
+        padding-top: 5px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #content .item{
+        width: 90%;
+    }
+
+    #content h2 {
+        margin: 10px !important;
+    }
+
+    #content .contact {
+        margin-top: 15px;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 5px;
+        padding: 10px 0;
+    }
+ }
+
+ @media(max-width:420px) {
+    #header-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-menu ul li a {
+        padding: 5px 0;
+    }
+    #content .contact, #content .about
+    {
+        margin-top: 0 15px;
+    }
  }
